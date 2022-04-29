@@ -29,7 +29,7 @@ const Upcoming= ({data, setSelectedView}: Props) => {
                                     <div style={{margin:"0 20px",fontWeight:"500"}}> {e.houseBillNumber } </div>
                                     <div style={{margin:"0 20px"}}> {e.mode} </div>
                             </div>
-                            <div  style={{margin:"0 20px", fontSize:"small"}}> {`Sent on ${e.estimatedDeparture} to arrive on ${e.estimatedArrival}`} </div>
+                            <div className='hide' style={{margin:"0 20px", fontSize:"small"}}> {`Sent on ${e.estimatedDeparture} to arrive on ${e.estimatedArrival}`} </div>
 
                         </div>
                     )

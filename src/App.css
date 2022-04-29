@@ -138,4 +138,61 @@
   
 }
 
+@media (max-width: 750px) {
+
+  .widget{
+    font-size: xx-small
+  }
+  .WeekGlance{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .WeekGlanceDays{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 10px;
+    padding: 0px 10PX;
+    justify-content: space-between;
+    /* for some reason this hides it */
+    overflow: scroll;
+  }
+
+  .WeekDetails{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 20px;
+    justify-content: space-between;
+    width: 93vw;
+    max-height: 90vh;
+
+  }
+
+  .SelectionDetails{
+    width: 90%;
+    height: 40vh;
+    margin-top: 0px;
+    position: relative;
+
+  }
+  .Upcoming{
+    width: 93%;
+    height: 49vh;
+    padding: 0;
+    margin: 0 20px 0 0 ;
+    font-size: medium;
+    border-radius: 15px 15px 0 0;
+    background-color: rgb(225, 225, 225);
+
+    /* position: relative;;
+    top: -20% */
+
+  }
+  .hide{
+    visibility: hidden;
+  }
+  
+}
+
                                
