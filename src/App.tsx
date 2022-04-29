@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from '@material-ui/core';
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Redirect, Route, Switch, } from 'react-router-dom'
 
 import './App.css';
 import { Navbar } from './components/Navbar';
@@ -21,6 +21,9 @@ export const App = () => {
       <Router>
         <Navbar />
         <Switch>
+          <Route exact path="/">
+            <DashboardPage />
+          </Route>
           <Route exact path="/">
             <Redirect to="/dashboard" />
           </Route>

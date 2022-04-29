@@ -34,7 +34,7 @@ const adjustShipmentDates = (shipments: Shipment[]): Shipment[] => shipments.map
 // Feel free to change this constant to a really high % during your testing to
 // make sure your failure handling works, and to a low number while you're
 // developing / testing your success case
-const FAILURE_RATIO = .1
+const FAILURE_RATIO = 0
 
 const setTimeoutAsync = async (millis: number): Promise<void> => {
     return new Promise(resolve => setTimeout(resolve, millis))
