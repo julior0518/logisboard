@@ -24,8 +24,9 @@ const WeekGlance= ({data}: Props) => {
         let deliveryDay 
 
         for (let i:number = 0; i <= 6 ; i ++){
-            i===0 ? todayCalc : todayCalc.setDate(todayCalc.getDate() + 1);
-            const todayDynamic = format(todayCalc, "MM/dd/yy")
+            const g = i===0 ? todayCalc : todayCalc.setDate(todayCalc.getDate() + 1);
+
+            const todayDynamic = format(g, "MM/dd/yy")
             deliveryDay = data.filter((e:any,o:number)=>(
                 e.estimatedArrival === todayDynamic 
             )) 

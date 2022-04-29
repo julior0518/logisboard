@@ -3,7 +3,6 @@ import { Box, makeStyles, useTheme } from "@material-ui/core"
 import { DataGrid, GridColDef } from "@material-ui/data-grid"
 import Loader from 'react-loader-spinner'
 import { fetchShipments, FetchShipmentsResult } from "../data/fetch-shipments"
-import { flattenDiagnosticMessageText } from "typescript"
 
 const COLUMNS: GridColDef[] = [
     {

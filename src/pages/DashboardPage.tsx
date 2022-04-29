@@ -1,4 +1,4 @@
-    import { ReactElement, useEffect, useState, FC } from "react"
+    import { ReactElement, useEffect, useState, } from "react"
     import { Box, makeStyles, useTheme } from "@material-ui/core"
     import Loader from 'react-loader-spinner'
     import { fetchShipments, FetchShipmentsResult } from "../data/fetch-shipments"
